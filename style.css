@@ -1,0 +1,49 @@
+:root {
+    --bg-color: #453F78;
+    --score-bg: #000500;
+    --buttons-color: #456990;
+    --score-color: #E63946;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Merriweather', sans-serif;
+}
+section {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+h1 {
+    color: white;
+    margin-left: 27px;
+}
+.score-board {
+    background-color: var(--score-bg);
+    width: 7em;
+    height: 7em;
+    margin-bottom: 10px;
+    margin-left: 2em;
+    border-radius: 5px;
+    
+}
+.score-board p {
+    color: var(--score-color);
+    text-align: center;
+    font-size: 5em;
+    margin: 0;
+}
+
+
+button {
+    color: var(--buttons-color);
+    background-color: var(--bg-color);
+    border: 2px solid var(--buttons-color);
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+
+}
