@@ -17,9 +17,19 @@ section {
 
 }
 
+.home-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.guest-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
 h1 {
     color: white;
-    margin-left: 27px;
+
 }
 .score-board {
     background-color: var(--score-bg);
@@ -51,4 +61,20 @@ button {
 button:hover  {
     background-color: var(--buttons-color);
     color: var(--bg-color);
+    transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+    
+    .guest-container {
+        margin-top: 10px;
+    }
+    .home-container {
+        margin-top: 50px;
+    }
+
+    
 }
