@@ -47,3 +47,8 @@ button {
     cursor: pointer;
 
 }
+
+button:hover  {
+    background-color: var(--buttons-color);
+    color: var(--bg-color);
+}

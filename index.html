@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basketball Scoreboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
@@ -13,22 +14,19 @@
     <section>
         <div class="home-container">
             <h1>HOME</h1>
-            <div class="score-board"><p>0</p></div>
-            <button type="button">+1</button>
-            <button type="button">+2</button>
-            <button type="button">+3</button>
-            <button type="button">Reset</button>
+            <div class="score-board"><p id="home-score-el">0</p></div>
+            <button type="button" onclick="addPoints('home', 1)">+1</button>
+            <button type="button" onclick="addPoints('home', 2)">+2</button>
+            <button type="button" onclick="addPoints('home', 3)">+3</button>
+            <button type="button" onclick="resetHomeScore()">Reset</button>
         </div>
         <div class="guest-container">
             <h1>GUEST</h1>
-            <div class="score-board"><p>0</p></div>
-            <div class="buttons-container">
-
-                <button type="button">+1</button>
-                <button type="button">+2</button>
-                <button type="button">+3</button>
-                <button type="button">Reset</button>
-            </div>
+            <div class="score-board"><p id="guest-score-el">0</p></div>
+                <button type="button" onclick="addPoints('guest', 1)">+1</button>
+                <button type="button" onclick="addPoints('guest', 2)">+2</button>
+                <button type="button" onclick="addPoints('guest', 3)">+3</button>
+                <button type="button" onclick="resetGuestScore()">Reset</button>
         </div>
     </section>
     
